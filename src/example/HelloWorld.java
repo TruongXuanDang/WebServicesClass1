@@ -11,6 +11,14 @@ public class HelloWorld {
     System.out.println(result);
     return result;
   }
+
+  @WebMethod
+  public int totalValue(int first, int second) {
+    int result = first+second;
+    System.out.println(result);
+    return result;
+  }
+
   public static void main(String[] argv) {
     Object implementor = new HelloWorld ();
     String address = "http://localhost:9000/HelloWorld";
